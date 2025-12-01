@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Explora | Viajes inolvidables</title>
+  <meta name="description" content="Descubre destinos, ofertas y consejos para tu próximo viaje." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Barra superior y navegación -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="logo">Explora</a>
+      <nav class="nav">
+        <a href="#destinos">Destinos</a>
+        <a href="#ofertas">Ofertas</a>
+        <a href="#tips">Consejos</a>
+        <a href="#contacto" class="btn btn-sm">Contacto</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-content">
+      <h1>Tu próxima aventura empieza aquí</h1>
+      <p>Guías claras, rutas inteligentes y precios justos para viajar sin complicaciones.</p>
+      <div class="hero-actions">
+        <a href="#ofertas" class="btn btn-primary">Ver ofertas</a>
+        <a href="#destinos" class="btn btn-outline">Explorar destinos</a>
+      </div>
+    </div>
+    <div class="hero-bg" role="img" aria-label="Paisaje de playa al atardecer"></div>
+  </section>
+
+  <!-- Destinos destacados -->
+  <section id="destinos" class="section">
+    <div class="container">
+      <h2>Destinos destacados</h2>
+      <div class="grid">
+        <article class="card">
+          <img src="descarga.jpg" alt="Playa turquesa" loading="lazy">
+          <div class="card-body">
+            <h3>Caribe</h3>
+            <p>Aguas cristalinas, comida local y descanso total. Ideal para desconectar.</p>
+            <a href="#" class="link">Ver guía</a>
+          </div>
+        </article>
+        <article class="card">
+          <img src="ciudad iluminada.jpg" alt="Ciudad iluminada" loading="lazy">
+          <div class="card-body">
+            <h3>Ciudades</h3>
+            <p>Museos, arquitectura y gastronomía. Perfecto para curiosos y foodies.</p>
+            <a href="#" class="link">Ver guía</a>
+          </div>
+        </article>
+        <article class="card">
+          <img src="OIP.jpg" alt="Montaña nevada" loading="lazy">
+          <div class="card-body">
+            <h3>Montaña</h3>
+            <p>Senderismo y paisajes épicos. Lleva ropa técnica y vive la aventura.</p>
+            <a href="#" class="link">Ver guía</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ofertas -->
+  <section id="ofertas" class="section section-accent">
+    <div class="container">
+      <h2>Ofertas actuales</h2>
+      <ul class="deals">
+        <li class="deal">
+          <span class="deal-title">Bogotá → Cartagena</span>
+          <span class="deal-price">$ 190.000 COP</span>
+          <a href="#" class="btn btn-sm">Reservar</a>
+        </li>
+        <li class="deal">
+          <span class="deal-title">Medellín → San Andrés</span>
+          <span class="deal-price">$ 350.000 COP</span>
+          <a href="#" class="btn btn-sm">Reservar</a>
+        </li>
+        <li class="deal">
+          <span class="deal-title">Cali → Ciudad de México</span>
+          <span class="deal-price">$ 890.000 COP</span>
+          <a href="#" class="btn btn-sm">Reservar</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Consejos -->
+  <section id="tips" class="section">
+    <div class="container">
+      <h2>Consejos rápidos</h2>
+      <div class="tips">
+        <div class="tip">
+          <h3>Temporada</h3>
+          <p>Viaja en temporada media para ahorrar y evitar multitudes.</p>
+        </div>
+        <div class="tip">
+          <h3>Seguro</h3>
+          <p>Contrata un seguro de viaje que cubra salud y cancelaciones.</p>
+        </div>
+        <div class="tip">
+          <h3>Equipaje</h3>
+          <p>Empaca ligero y usa capas; evita pagar equipaje extra.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="section">
+    <div class="container">
+      <h2>Contacto</h2>
+      <form class="contact-form" action="#" method="post">
+        <div class="form-row">
+          <label for="nombre">Nombre</label>
+          <input id="nombre" name="nombre" type="text" placeholder="Tu nombre" required>
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="tucorreo@ejemplo.com" required>
+        </div>
+        <div class="form-row">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="4" placeholder="¿Qué destino te interesa?"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2025 Explora. Todos los derechos reservados.</p>
+      <div class="footer-links">
+        <a href="#">Términos</a>
+        <a href="#">Privacidad</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Menú móvil: script mínimo -->
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.nav');
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>
